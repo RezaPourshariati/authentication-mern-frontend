@@ -20,7 +20,7 @@ export const shortenText = (text, n) => {
 };
 
 const Profile = () => {
-    useRedirectLoggedOutUser("/login"); // Our Custom Hook
+    // useRedirectLoggedOutUser("/login"); // Our Custom Hook
     const dispatch = useDispatch();
 
     const {isLoading, isLoggedIn, isSuccess, message, user} = useSelector((state) => state.auth);
